@@ -1,7 +1,12 @@
-package com.coffee.MyArrary;
+package com.coffee.Air;
 
 public class Air {
-
+    /**
+     * 整形数组比较
+     * @param a
+     * @param b
+     * @return
+     */
     public static boolean equals(int[]a,int[]b) {
         if (a == b)
             return true;
@@ -18,8 +23,12 @@ public class Air {
         return true;
     }
 
+    /**
+     *  外层 a.length - 1,内层 a.length - 1 - i 冒泡
+     * @param a
+     */
     public static void sort(int[] a) {
-        //外层 a.length - 1,内层 a.length - 1 - i 冒泡
+
         if (a == null)
             throw new NullPointerException();
         if (a.length < 0)
@@ -38,6 +47,13 @@ public class Air {
         }
 
     }
+
+    /**
+     * 二分
+     * @param a
+     * @param x
+     * @return
+     */
 
     public static int binarySearch(int[] a,int x) {
 

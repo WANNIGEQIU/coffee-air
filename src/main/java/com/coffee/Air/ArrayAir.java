@@ -1,20 +1,20 @@
-package com.coffee.MyArrary;
+package com.coffee.Air;
 
-public class ArrayAir {
+public class ArrayAir<E> {
 
-    private int[] elements;
+    private Object[] elements;
 
     public ArrayAir(){
-        elements = new int[0];
+        elements = EMPTY_ELEMENTS;
     }
 
     public int size() {
         return elements.length;
     }
 
-    public void add(int element){
+    public void add(E element){
         int x = this.size() + 1;
-        int[] arr = new int[x];
+        Object[] arr = new Object[x];
         for (int i = 0; i < elements.length; i++) {
             arr[i]=elements[i];
         }
@@ -33,7 +33,7 @@ public class ArrayAir {
         StringBuilder sb = new StringBuilder();
         sb.append("{");
         for (int i = 0; i < elements.length; i++) {
-            sb.append(i);
+            sb.append(elements[i]);
             if (i == max)
                 return sb.append("}").toString();
             sb.append(",");
@@ -41,10 +41,10 @@ public class ArrayAir {
         return sb.toString();
     }
 
-    public int remove(int index) {
+    public E remove(int index) {
         check(index);
-        int remValue = elements[index];
-        int[] arr = new int[size() - 1];
+        Object element = elements[index];
+        Object[] arr = new Object[size() - 1];
         for (int i = 0; i < arr.length; i++) {
             if (i < index) {
                 arr[i]=elements[i];
@@ -53,17 +53,17 @@ public class ArrayAir {
             }
         }
         elements = arr;
-        return remValue;
+        return (E)element;
 
     }
 
-    public int get(int index) {
-        return elements[index];
+    public E get(int index) {
+        return (E) elements[index];
     }
 
-    public void insert(int index,int element) {
+    public void insert(int index,E element) {
        check(index);
-        int[] arr = new int[size() + 1];
+        Object[] arr = new Object[size() + 1];
         for (int i = 0; i < elements.length; i++) {
             if (i < index) {
                 arr[i] = elements[i];
@@ -76,19 +76,27 @@ public class ArrayAir {
 
     }
 
-    public void set(int index,int element) {
+    public void set(int index,E element) {
        check(index);
        elements[index]=element;
 
     }
 
     public void clear() {
-        elements =new int[0];
+        elements = EMPTY_ELEMENTS;
     }
 
+
+    public boolean isEmpty() {
+        return size() == 0;
+    }
 
     private void check(int index) {
         if (index > size()-1 || index < 0)
             throw new RuntimeException("数组下标越界");
     }
+
+    private final static Object[] EMPTY_ELEMENTS = {};
+
+
 }
