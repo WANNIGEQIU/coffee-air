@@ -1,2 +1,6 @@
 server:
   port: 9992
+
+logging:
+  level:
+    com.coffee: debug
