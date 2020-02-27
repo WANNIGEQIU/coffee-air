@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<beans>
+
+
+
+
+    <bean id="Brand" class="com.coffee.IocXml.pojo.Brand">
+        <property name="name" value="Apple"/>
+        <property name="id" value="20"/>
+        <property name="day" value="2020-02-27"/>
+        <property name="price" value="4999.00"/>
+    </bean>
+
+
+
+    <bean id="ser" class="com.coffee.IocXml.service.BrandService">
+        <property ref="Brand"/>
+    </bean>
+</beans>
+
