@@ -1,6 +1,4 @@
-package com.coffee.IocXml.pojo;
-
-import com.coffee.IocXml.utils.DateUtils;
+package com.coffee.iocxml.pojo;
 
 import java.util.Date;
 
@@ -60,7 +58,7 @@ public class Brand {
         return "Brand{" +
                 "name='" + name + '\'' +
                 ", id=" + id +
-                ", day=" + DateUtils.date2String(day) +
+//                ", day=" + DateUtils.date2String(day) +
                 ", price=" + price +
                 '}';
     }

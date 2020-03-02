@@ -2,10 +2,7 @@
 
 <beans>
 
-
-
-
-    <bean id="Brand" class="com.coffee.IocXml.pojo.Brand">
+    <bean id="Brand" class="com.coffee.iocxml.pojo.Brand">
         <property name="name" value="Apple"/>
         <property name="id" value="20"/>
         <property name="day" value="2020-02-27"/>
@@ -14,7 +11,7 @@
 
 
 
-    <bean id="ser" class="com.coffee.IocXml.service.BrandService">
+    <bean id="ser" class="com.coffee.iocxml.service.BrandService">
         <property ref="Brand"/>
     </bean>
 </beans>

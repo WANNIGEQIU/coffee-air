@@ -1,4 +1,4 @@
-package com.coffee.Air;
+package com.coffee.air;
 
 public class QueueAir<E> {
     private final static Object[] EMPTY_ELEMENTS = {};

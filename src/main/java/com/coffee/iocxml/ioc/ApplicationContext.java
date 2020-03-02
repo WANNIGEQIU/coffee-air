@@ -1,4 +1,4 @@
-package com.coffee.IocXml.ioc;
+package com.coffee.iocxml.ioc;
 
 public interface ApplicationContext {
 

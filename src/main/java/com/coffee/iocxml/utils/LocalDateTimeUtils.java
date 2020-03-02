@@ -1,4 +1,4 @@
-package com.coffee.IocXml.utils;
+package com.coffee.iocxml.utils;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

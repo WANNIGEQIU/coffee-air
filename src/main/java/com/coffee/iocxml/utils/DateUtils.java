@@ -1,4 +1,4 @@
-package com.coffee.IocXml.utils;
+package com.coffee.iocxml.utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

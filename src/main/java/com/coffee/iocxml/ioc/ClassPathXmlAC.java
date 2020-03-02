@@ -1,7 +1,7 @@
-package com.coffee.IocXml.ioc;
+package com.coffee.iocxml.ioc;
 
 
-import com.coffee.IocXml.utils.DateUtils;
+import com.coffee.iocxml.utils.DateUtils;
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.JDOMException;

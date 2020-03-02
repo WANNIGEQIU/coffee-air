@@ -1,4 +1,4 @@
-package com.coffee.Air;
+package com.coffee.air;
 
 public class Air {
     /**

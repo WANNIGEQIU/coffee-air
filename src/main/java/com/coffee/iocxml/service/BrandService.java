@@ -1,6 +1,6 @@
-package com.coffee.IocXml.service;
+package com.coffee.iocxml.service;
 
-import com.coffee.IocXml.pojo.Brand;
+import com.coffee.iocxml.pojo.Brand;
 
 public class BrandService {
 
